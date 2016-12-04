@@ -1,0 +1,40 @@
+<html>
+<head>
+    <script src="login.css"></script>
+</head>
+<body>
+<div flex="70" ng-controller="LoginCtrl" layout="column" layout-align="center center" layout-gt-xs="row" ng-cloak=""
+     class="md-inline-form inputdemoBasicUsage">
+
+    <md-content layout-gt-sm="row" layout-align="center center" layout-padding="">
+        <div layout-margin layout-align="center center">
+            <md-input-container>
+                <label>E-mail</label>
+                <input type='email' ng-model='user.email' placeholder='your@email.com' ng-required='!contact.phone'/>
+            </md-input-container>
+            <md-input-container>
+                <label>Password</label>
+                <input ng-model="user.password" type="password" ng-required="required">
+            </md-input-container>
+            <button type="submit" ng-click="login()">Login</button>
+            <md-content class="md-padding" layout-align="center center">
+                <div layout="column" layout-gt-xs="row">
+                    <md-card flex style="display: inline-block;">
+                        <h2>Card title #1</h2>
+                        <md-card-content>
+                            <p>Some content</p>
+                        </md-card-content>
+                    </md-card>
+                    <md-card flex style="display: inline-block;">
+                        <h2>Card title #2</h2>
+                        <md-card-content>
+                            <p>Some content</p>
+                        </md-card-content>
+                    </md-card>
+                </div>
+            </md-content>
+        </div>
+    </md-content>
+</div>
+</body>
+</html>
